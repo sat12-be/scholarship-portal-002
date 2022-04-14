@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #a0456b;
+    }
+
+    input[type=reset] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=reset]:hover {
+      background-color: #a04554;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+  <style>
+    body {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 style="color: aliceblue;" align="center">student details</h2>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <h3>category</h3>
+
+
+      <div>
+        <label for="caste">caste</label>
+        <select name="caste" id="caste">
+          <option value="general" selectdS>general</option>
+          <option value="sc/st">sc/st</option>
+          <option value="obc/scbc">obc/scbc</option>
+          <option value="ebc">ebc</option>
+        </select>
+      </div>
+
+      <!-- <input type="text" id="lname" name="lastname" placeholder="Your last name.."> -->
+      <div>
+        <label for="fname">state</label>
+        <input type="text" id="fname" name="firstname" placeholder="states name..">
+
+      </div>
+
+      <div>
+        <h3>class/courses</h3>
+        <label for="courses">courses</label>
+        <select name="course" id="courses">
+          <option value="b.tech" selectdS>b.tech</option>
+          <option value="m.tech">m.tech</option>
+          <option value="m.b.a">m.b.a</option>
+          <option value="m.c.a">m.c.a</option>
+        </select>
+
+      </div>
+
+
+      <div>
+
+        <h3>family income</h3>
+        <label for="fname">annual income</label>
+        <input type="number" id="fname" name="firstname" placeholder="yearly salary">
+      </div>
+
+      <div>
+        <h3>students percentage</h3>
+        <label for="per">percentage</label>
+
+        <input type="number" id="per" name="percentage" placeholder="10th per">
+
+        <input type="number" id="per" name="percentage" placeholder="12th per">
+
+      </div>
+
+  </div>
+  <br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="reset">
+  </form>
+  </div>
+
+</body>
+
+</html>
